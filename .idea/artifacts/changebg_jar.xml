@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="changebg:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/changebg_jar</output-path>
+    <root id="archive" name="changebg.jar">
+      <element id="module-output" name="changebg" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
