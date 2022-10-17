@@ -1,10 +1,12 @@
 package de.shept.changebg;
 
+import com.github.weisj.darklaf.LafManager;
+import com.github.weisj.darklaf.theme.*;
 import com.sun.jna.Library;
 import com.sun.jna.Native;
 import com.sun.jna.win32.W32APIOptions;
 
-import java.awt.EventQueue;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -43,6 +45,8 @@ public class Main {
      * Initialize the contents of the frame.
      */
     private void initialize() {
+        LafManager.install(new DarculaTheme());
+
         frame = new JFrame();
         frame.setBounds(100, 100, 450, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
