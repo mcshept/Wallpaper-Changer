@@ -1,3 +1,3 @@
 ## TODO
 
-- Wallpaper restorer (Blue Windows 10 background)
+[X] Wallpaper restorer (Blue Windows 10 background)
