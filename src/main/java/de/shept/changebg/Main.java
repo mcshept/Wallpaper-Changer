@@ -49,7 +49,7 @@ public class Main {
         frame.getContentPane().setLayout(null);
 
         JButton selectBtn = new JButton("Select");
-        selectBtn.setBounds(155, 57, 85, 21);
+        selectBtn.setBounds(165, 47, 85, 21);
         selectBtn.addActionListener(e -> {
             if (e.getSource() == selectBtn) {
 
@@ -65,7 +65,7 @@ public class Main {
         frame.getContentPane().add(selectBtn);
 
         JButton changeBtn = new JButton("Change");
-        changeBtn.setBounds(155, 139, 85, 21);
+        changeBtn.setBounds(165, 129, 85, 21);
         changeBtn.addActionListener(e -> {
             if (e.getSource() == changeBtn) {
                 change(file);
@@ -73,6 +73,16 @@ public class Main {
             }
         });
         frame.getContentPane().add(changeBtn);
+
+        JButton defaultBtn = new JButton("Default");
+        defaultBtn.setBounds(165, 211, 85, 21);
+        defaultBtn.addActionListener(e -> {
+            if (e.getSource() == defaultBtn) {
+                change("C:\\Windows\\Web\\Wallpaper\\Windows\\img0.jpg");
+                System.exit(0);
+            }
+        });
+        frame.getContentPane().add(defaultBtn);
     }
 
     private void change(String file) {
